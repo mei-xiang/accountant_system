@@ -1,0 +1,321 @@
+
+/*  input框: 
+    jr-36-input jr-48-input 
+    jr-36-normal-input  jr-36-money-input  
+    jr-48-normal-input  jt-48-money-input 
+*/ 
+
+// 全局input 的样式
+.el-input__inner:hover{
+  border-color: $color-blue-40;
+}
+.el-input__inner:focus {
+  border-color: $color-blue-60;
+}
+.el-input__inner {
+  border: 1px solid #DDDDDD;
+  color: #606067 ;
+  font-size: 16px;
+}
+
+.el-input__suffix {
+  right: 0;
+}
+
+.el-input-group__append
+,.el-input-group__prepend {
+  padding: 6px;
+  background-color: $color-white;
+}
+.el-input__suffix-inner div {
+  padding: 6px;
+  color: #8F9297;
+}
+
+.el-input.is-focus .el-input__inner {
+  border-color: $color-blue-60; 
+}
+
+.selected {
+  color: rgba(0,17,104,1) !important;
+  background-color: rgba(0,17,104,0.10) !important;
+}
+.el-select .el-input__inner:focus {
+  border-color: $color-blue-60;
+}
+
+.el-select .el-input.is-focus .el-input__inner {
+  border-color: $color-blue-60;
+}
+
+.el-textarea__inner:focus {
+  border-color: $color-blue-60;
+}
+
+
+
+
+
+// ***************************************************************
+// 高度为36px的input - 通用
+.jr-36-input /deep/ .el-input__inner{
+  width: 200px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+}
+
+.jr-36-input /deep/ .el-input__inner:hover{
+  border-color: $color-blue-40;
+}
+
+.jr-36-input /deep/ .el-input__inner:focus{
+  border-color: $color-blue-60;
+}
+
+// 高度为36px的input
+.jr-36-normal-input,
+.jr-36-money-input {
+  width: 200px;
+}
+
+.jr-36-money-input /deep/ .el-input-group__append
+,.el-input-group__prepend {
+  padding: 6px;
+  background-color: $color-white;
+}
+.jr-36-money-input /deep/ .el-input__suffix {
+  right: 0;
+}
+.jr-36-money-input /deep/ .el-input__suffix-inner div {
+  padding: 6px;
+  color: #8F9297;
+}
+
+// 高度为48px的input - 通用
+.jr-48-input {
+  width: 300px;
+}
+
+.jr-48-input /deep/ .el-input__inner{
+  width: 300px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+}
+
+.jr-48-input /deep/ .el-input__inner:focus{
+  border-color: $color-blue-60;
+}
+.jr-48-input /deep/ .el-input__inner:hover{
+  border-color: $color-blue-40;
+}
+
+// 高度为48px的input
+.jr-48-money-input /deep/ .el-input-group__append
+,.el-input-group__prepend {
+  padding: 6px;
+  background-color: #ffffff;
+}
+.jr-48-money-input /deep/ .el-input__suffix {
+  right: 0;
+}
+.jr-48-money-input /deep/ .el-input__suffix-inner div {
+  padding: 17px 12px 17px 12px;
+  color: #8F9297;
+}
+
+/*  select框: 
+    jr-36-select jr-48-select 
+    jr-36-normal-select
+    jr-48-normal-select
+*/ 
+
+//高度为36的select多选框
+.jr-36-select {
+  width: 200px;
+}
+.jr-36-select /deep/ .el-input__inner{
+  width: 200px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+}
+.jr-36-select /deep/ .el-input__inner:focus{
+  border-color: $color-blue-60; 
+}
+.jr-36-select /deep/ .el-input__inner:hover{
+  border-color: $color-blue-40; 
+}
+
+.jr-36-select /deep/ .el-input.is-focus .el-input__inner {
+  border-color: $color-blue-60; 
+}
+.jr-36-normal-select.selected {
+  color: rgba(0,17,104,1) !important;
+  background-color: rgba(0,17,104,0.10) !important;
+}
+//高度为48的select多选框
+.jr-48-select {
+  width: 300px;
+}
+.jr-48-select /deep/ .el-input__inner{
+  width: 300px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+}
+.jr-48-select /deep/ .el-input__inner:focus{
+  border-color: $color-blue-60; 
+}
+.jr-48-select /deep/ .el-input__inner:hover{
+  border-color: $color-blue-40; 
+}
+
+.jr-48-select /deep/ .el-input.is-focus .el-input__inner {
+  border-color: $color-blue-60; 
+}
+.jr-48-normal-select.selected {
+  color: rgba(0,17,104,1) !important;
+  background-color: rgba(0,17,104,0.10) !important;
+}
+
+/*  单选、多选框: 
+    jr-normal-radio
+    jr-normal-checkbox
+*/ 
+
+// 單選多選全局樣式
+.el-checkbox__label {
+  color: #606067 ;
+  font-size: 16px;
+}
+.el-checkbox__inner:hover {
+  border-color: $color-blue-40; 
+}
+
+.jr-normal-radio /deep/ .el-radio__input.is-checked 
+.el-radio__inner{
+  border-color: $color-blue-100;
+  background: $color-blue-100;
+}
+.jr-normal-radio /deep/ .el-radio__input.is-checked+.el-radio__label {
+  color: $color-blue-100;
+}
+.jr-normal-radio.is-disabled.is-checked /deep/ .el-radio__inner {
+  background-color: $color-blue-60;
+  border-color: $color-blue-60;
+  border: 0px;
+}
+.jr-normal-radio.is-disabled.is-checked /deep/ .el-radio__inner::after {
+  background-color: $color-white;
+}
+.jr-normal-radio.is-disabled.is-checked /deep/ .el-radio__label {
+  color: $color-blue-60;
+}
+.jr-normal-radio.is-bordered.is-checked {
+  border-color: $color-blue-100;
+}
+.jr-normal-radio.is-disabled.is-bordered.is-checked {
+  border-color: $color-blue-60;
+}
+.jr-normal-radio.is-disabled.is-bordered.is-checked /deep/ .el-radio__inner{
+  border: 0px;
+}
+
+.jr-normal-checkbox.is-checked /deep/ .el-checkbox__inner {
+  background-color: $color-blue-100;
+  border-color: $color-blue-100;
+}
+.jr-normal-checkbox.is-checked /deep/ .el-checkbox__label {
+  color: $color-blue-100;
+}
+.jr-normal-checkbox /deep/ .is-focus .el-checkbox__inner {
+  border-color: $color-blue-100;
+}
+.jr-normal-checkbox.is-bordered.is-checked {
+  border-color: $color-blue-100;
+}
+.jr-normal-checkbox.is-bordered.is-checked.is-disabled {
+  border-color: $color-blue-60;
+}
+.jr-normal-checkbox.is-disabled.is-bordered.is-checked /deep/ .el-checkbox__inner {
+  background-color: $color-blue-60;
+  border-color: #DCDFE6;
+}
+.jr-normal-checkbox.is-disabled.is-bordered.is-checked /deep/ .el-checkbox__label {
+  color: $color-blue-60;
+}
+
+/*
+  开关:
+  jr-normal-switch
+ */ 
+  /deep/ .el-switch__core:after {
+  background: $color-golden-rose;
+ }
+
+
+//  全局button 样式
+.el-button--primary {
+  background-color: #001168;
+  border-color: #001168;
+  color: #E7E083;
+}
+
+.el-button--primary:focus, .el-button--primary:hover {
+  background: #001FA0;
+  border-color: #001FA0;
+  color: #E7E083;
+}
+
+.el-button--primary.is-disabled,.el-button--primary.is-disabled:hover {
+  color: #E7E083;
+  background-color: #001168;
+  opacity: .6;
+  border-color: none;
+}
+
+/*
+  jr-tabs 樣式
+ */ 
+ .jr-tabs .el-tabs__item {
+   font-size: 16px;
+    color: #606067;
+ }
+
+ .jr-tabs .el-tabs__nav-wrap::after {
+   height: 4px;
+ }
+
+ .jr-tabs .el-tabs__item.is-active {
+   color: #001168;
+   font-weight: bold;
+ }
+
+ .jr-tabs .el-tabs__active-bar {
+  background-color: #001168;
+  height: 4px;
+ }
+
+
+//  全局modal
+
+.el-dialog__wrapper {
+  overflow: hidden;
+}
+.el-dialog__wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 7px;
+  // border: 3px solid #fff;
+  // border-right: 2px solid #fff;
+}

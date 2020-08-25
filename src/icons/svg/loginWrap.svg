@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="356px" viewBox="0 0 320 356" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>登录框</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="10.7896943%" y1="1.69529746%" x2="90.3989395%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.138467002" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="52.8663429%"></stop>
+            <stop stop-color="#00095A" stop-opacity="0.25" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="9.63091099%" y1="0.0369446749%" x2="90.3989395%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#8B6F28" offset="0.00263935811%"></stop>
+            <stop stop-color="#E7E083" offset="24.1501267%"></stop>
+            <stop stop-color="#797640" offset="48.2025971%"></stop>
+            <stop stop-color="#FAF8A3" offset="74.5196368%"></stop>
+            <stop stop-color="#99893E" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-3" x="980" y="371" width="320" height="356" rx="8"></rect>
+        <filter x="-12.5%" y="-11.2%" width="125.0%" height="122.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="40" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.820121951   0 0 0 0 0.831895001   0 0 0 0 1  0 0 0 0.319247159 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="登录页" transform="translate(-980.000000, -371.000000)">
+            <g id="登录框">
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                <rect stroke="url(#linearGradient-2)" stroke-width="2" stroke-linejoin="square" x="981" y="372" width="318" height="354" rx="8"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
